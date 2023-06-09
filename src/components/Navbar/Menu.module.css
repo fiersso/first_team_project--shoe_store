@@ -1,0 +1,36 @@
+.Menu {
+	margin-top: 1rem;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	gap: 1.3rem;
+	background-color: var(--buttonColor);
+	border-radius: 1rem;
+	padding: 2.5rem;
+	min-width: 16.8rem;
+	width: fit-content;
+}
+
+.Menu>.UserData {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1rem 0rem 1.5rem;
+}
+
+.Menu>.UserData>.UserIcon {
+	width: 6rem;
+}
+
+.Menu * {
+	color: var(--lightTextColor);
+}
+
+.Menu hr {
+    color: rgba(116, 117, 123, 0.599);
+}
+
+.Menu button {
+	color: var(--textColor);
+	font-weight: bold;
+}

@@ -1,0 +1,17 @@
+.message {
+    padding: 1.5rem;
+    background-color: rgba(208, 114, 93, 0.6);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.message > img{
+    width: 5rem;
+    height: 5rem;
+    color: aqua;
+    background: #b36262;
+    border-radius: 3rem;
+}

@@ -1,0 +1,103 @@
+@font-face {
+	font-family: Jost;
+	src: url('./fonts/Jost/static/Jost-Medium.ttf');
+}
+
+:root {
+	--bgColor: #cec6b6;
+	--accent: #e3962a;
+	--navColor: rgba(206, 198, 182, 0.6);
+	--buttonColor: #111;
+	--textColor: #222;
+	--lightTextColor: rgba(255, 248, 237, 0.8);
+
+	/* dark theme*/
+
+	/* --bgColor:#252525eb;
+	--accent: #e3962a;
+	--navColor: rgba(37, 37, 37, 0.8);
+	--buttonColor: #111;
+	--textColor: white;
+	--lightTextColor: rgb(228, 222, 211); */
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+	font-family: 'Jost', sans-serif;
+
+	color: var(--textColor);
+	text-decoration: none;
+}
+
+html {
+	font-size: 12px;
+}
+
+body {
+	background-color: var(--bgColor);
+}
+
+.container {
+	max-width: 85rem;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+}
+
+
+button,
+a,
+#Menu,
+#Cart,
+.UserIcon,
+.Variations>.container>div {
+	transition: all 0.4s ease-in-out;
+}
+
+button:hover,
+a:hover,
+.UserIcon:hover,
+.Variations>.container>div:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+button:hover {
+	background-color: var(--buttonColor);
+	color: var(--lightTextColor);
+}
+
+a,
+p,
+h2,
+h3 {
+	width: fit-content;
+	font-size: 1.2em;
+}
+
+button {
+	border: none;
+	background-color: var(--accent);
+	color: var(--buttonColor);
+	padding: 1rem 3rem;
+	width: fit-content;
+	border-radius: 0.5rem;
+	border: 0rem solid rgba(255, 255, 255, 0);
+}
+
+button:hover {
+	border: 0.02rem solid var(--bgColor);
+}
+
+.hidden {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(1rem);
+}

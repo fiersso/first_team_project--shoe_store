@@ -1,0 +1,99 @@
+.variations>div {
+	padding: 5rem 7.8rem;
+	display: grid;
+	gap: 4rem;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+}
+
+.variations>div>a {
+	transition: all 0.5s ease-in-out;
+	padding: 1.8rem;
+
+	display: grid;
+	align-items: center;
+	/* justify-content: center; */
+
+	background-color: var(--buttonColor);
+	background-size: cover;
+
+	/* box-shadow: 0rem 0rem 4rem 1rem #d7b88b; */
+	box-shadow: 0rem 0rem 4rem 1rem #ab9c86;
+
+	/* border: 2px var(--textColor) solid; */
+
+	width: 100%;
+	aspect-ratio: 1/1;
+	overflow: hidden;
+	border-radius: 1rem;
+}
+
+a.man > h1,
+a.women > h1 {
+	color: var(--lightTextColor);
+}
+
+
+.variations>.container>a:hover {
+	background-size: cover;
+	color: var(--textColor);
+}
+
+.variations h1 {
+	color: var(--buttonColor);
+
+	font-size: 3rem;
+}
+
+.man,
+.women {
+	background-image: url(../../assets/blackTexture.jpg);
+}
+
+.child {
+	filter: contrast(0.8);
+	background-image: url(../../assets/orangeTexture.jpg);
+
+}
+
+.child>h1 {
+	filter: contrast(1.1);
+}
+
+.LogoScreen > div {
+	display: grid;
+	align-items: center;
+	gap: 2rem;
+	grid-template-columns: 21rem auto;
+	height: 36rem;
+	justify-items: end;
+}
+
+.LogoScreen .LogoInfo {
+	display: flex;
+	flex-direction: column;
+	height: 78%;
+	font-size: 2rem;
+}
+
+.LogoScreen .LogoInfo button {
+	justify-self: flex-end;
+	margin: 0.8rem 0;
+	width: 12.6rem;
+}
+
+.LogoScreen img {
+	height: 100%;
+	border-radius: 1rem;
+}
+
+.GoShopping {
+	background-color: var(--buttonColor);
+	color: var(--lightTextColor);
+}
+
+.LogoScreen h2 {
+	font-size: 2.2rem;
+	color: rgb(78, 78, 78);
+	padding-bottom: 2rem;
+}
